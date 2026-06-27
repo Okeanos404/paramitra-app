@@ -1,23 +1,3 @@
-# 📚 BUKU PANDUAN LENGKAP SISTEM ERP PARAMITRA
-
-Dokumen ini merupakan gabungan dari seluruh dokumentasi dan panduan yang ada di proyek ini agar lebih rapih dan tersentralisasi dalam satu file `README.md`.
-
-## 📑 Daftar Isi
-
-1. [Deskripsi Proyek (README)](#1-deskripsi-proyek-readme)
-2. [Panduan Memulai Cepat](#2-panduan-memulai-cepat)
-3. [Alur Sistem Lengkap](#3-alur-sistem-lengkap)
-4. [Panduan Implementasi ERP](#4-panduan-implementasi-erp)
-5. [Ringkasan Implementasi](#5-ringkasan-implementasi)
-6. [Implementasi P400 Paramitra](#6-implementasi-p400-paramitra)
-7. [Cara Pindah Device (Migrasi)](#7-cara-pindah-device-migrasi)
-8. [Skenario Presentasi Dosen](#8-skenario-presentasi-dosen)
-
-
----
-
-# 1. Deskripsi Proyek (README)
-
 <div align="center">
   <h1>🏢 Paramitra ERP System</h1>
   <p>Sistem Manajemen Perusahaan Terpadu yang Dirancang Otomatis & Mudah Digunakan</p>
@@ -28,6 +8,21 @@ Dokumen ini merupakan gabungan dari seluruh dokumentasi dan panduan yang ada di 
     <img src="https://img.shields.io/badge/Bahasa-Indonesia-orange?style=for-the-badge" alt="Language" />
   </p>
 </div>
+
+<br>
+
+## 📑 Daftar Isi
+- [👋 Tentang Aplikasi](#-tentang-aplikasi)
+- [🚀 Panduan Memulai Cepat (Quick Start)](#-panduan-memulai-cepat-quick-start)
+- [🔄 Alur Sistem Lengkap](#-alur-sistem-lengkap)
+- [📖 Panduan Implementasi ERP](#-panduan-implementasi-erp)
+- [📝 Ringkasan Implementasi](#-ringkasan-implementasi)
+- [⚙️ Detail Implementasi P400](#-detail-implementasi-p400)
+- [💻 Cara Pindah Device (Migrasi)](#-cara-pindah-device-migrasi)
+- [🎓 Skenario Presentasi & Uji Sistem](#-skenario-presentasi--uji-sistem)
+
+<br>
+
 
 ---
 
@@ -95,7 +90,7 @@ Jika Anda ingin membaca lebih jauh tentang bagaimana cara kerja sistem ini, sila
 
 ---
 
-# 2. Panduan Memulai Cepat
+## 🚀 Panduan Memulai Cepat (Quick Start)
 
 Buku panduan singkat ini dibuat agar Anda bisa langsung mencoba sistem PT Paramitra tanpa kebingungan.
 
@@ -152,7 +147,7 @@ Sekarang, coba log out (keluar) dari akun Admin, lalu rasakan pengalaman menjadi
 
 ---
 
-# 3. Alur Sistem Lengkap
+## 🔄 Alur Sistem Lengkap
 
 <div align="center">
   <p>Penjelasan langkah demi langkah bagaimana operasional PT Paramitra Praya Prawatya berjalan dari awal hingga akhir menggunakan sistem terpadu.</p>
@@ -246,7 +241,7 @@ Dengan mengikuti alur di atas, seluruh rutinitas perusahaan menjadi sangat trans
 
 ---
 
-# 4. Panduan Implementasi ERP
+## 📖 Panduan Implementasi ERP
 
 <div align="center">
   <p>Panduan lengkap penerapan perangkat lunak terpadu untuk keseharian operasional PT Paramitra Praya Prawatya.</p>
@@ -262,7 +257,7 @@ Setiap alat dan tombol di dalam sistem ini saling berhubungan. Jika satu orang m
 
 ---
 
-## 1. MENU PELAYANAN PELANGGAN (TRANSAKSI)
+### MENU PELAYANAN PELANGGAN (TRANSAKSI)
 
 Ini adalah jantung dari kegiatan operasional. Di dalam menu **Transaksi**, kita mengurus semua orang yang ingin membeli barang.
 
@@ -277,7 +272,7 @@ Tugas staf selesai! Komputer akan langsung mengetik lembar Surat Tagihan Resmi (
 
 ---
 
-## 2. MENU GUDANG & PENGIRIMAN BARANG
+### MENU GUDANG & PENGIRIMAN BARANG
 
 Barang yang sudah lunas siap untuk diantarkan oleh kurir ke alamat pelanggan. Di sinilah kehebatan menu **Logistik (Pengiriman)** bekerja.
 
@@ -294,7 +289,7 @@ Mulai saat ini, sopir tidak perlu membuang pulsa untuk menelepon kantor setiap k
 
 ---
 
-## 3. MENU PENGADAAN & BELANJA (SUPPLY CHAIN)
+### MENU PENGADAAN & BELANJA (SUPPLY CHAIN)
 
 Sebuah perusahaan tidak hanya menjual, namun juga perlu membeli persediaan. Sistem kita menyediakan fitur **Pesanan Pembelian**.
 
@@ -311,7 +306,7 @@ Kejadian ini akan memicu dua hal hebat sekaligus secara otomatis:
 
 ---
 
-## 4. RUANG KEPEMIMPINAN (DASHBOARD BOS)
+### RUANG KEPEMIMPINAN (DASHBOARD BOS)
 
 Bagi jajaran direksi dan manajemen tingkat atas, sistem ini adalah teropong bisnis yang paling canggih dan jujur.
 
@@ -331,7 +326,7 @@ Kami memahami dokumen keuangan terkadang harus diserahkan secara fisik di atas m
 
 ---
 
-# 5. Ringkasan Implementasi
+## 📝 Ringkasan Implementasi
 
 <div align="center">
   <p>Laporan resmi mengenai seluruh pekerjaan pembaruan yang telah berhasil diselesaikan hingga tahap akhir (100% Selesai).</p>
@@ -390,7 +385,7 @@ Perangkat lunak ini tidak hanya menjadi pajangan yang indah dilihat, namun benar
 
 ---
 
-# 6. Implementasi P400 Paramitra
+## ⚙️ Detail Implementasi P400
 
 **Sistem Informasi ERP Penjualan, Distribusi, dan Rantai Pasok Berbasis Web untuk Meningkatkan Efisiensi Operasional pada PT Paramitra Praya Prawatya**
 
@@ -468,9 +463,9 @@ Ahmad Daris Khoery (2370211024)
 
 ---
 
-## 1. Pendahuluan
+### Pendahuluan
 
-### 1.1 Ringkasan Isi Dokumen
+#### 1 Ringkasan Isi Dokumen
 Sistem Informasi Layanan PT Paramitra Praya Prawatya merupakan aplikasi *Enterprise Resource Planning* (ERP) berbasis web yang dikembangkan untuk mengotomatisasi seluruh alur bisnis perusahaan. Sistem ini dibangun berdasarkan kebutuhan mendesak perusahaan dalam meningkatkan efektivitas penjualan, keakuratan data inventori gudang yang memiliki mobilitas tinggi, pelacakan armada distribusi di lapangan, serta mengontrol siklus pengadaan barang (pembelian ke pabrik) secara terpadu.
 
 Pembahasan pada dokumen ini sangat komprehensif, mencakup hasil implementasi sistem skala *Enterprise* yang telah dikembangkan secara penuh. Di dalamnya merangkum baris *source code* program inti untuk memaparkan logika mesin, tampilan menu dan antarmuka pengguna (*user interface*), serta proses *input* dan *output* (I/O) yang dihasilkan oleh aplikasi. 
@@ -479,54 +474,54 @@ Sistem ini didesain untuk melayani tiga entitas pengguna utama sekaligus: **Pela
 
 ---
 
-## 2. Source Code Program Aplikasi
+### Source Code Program Aplikasi
 
 *(Petunjuk: Sisipkan screenshot potongan kode pada ruang-ruang kosong)*
 
-### 2.1 routes\web.php
+#### 1 routes\web.php
 Fungsi utama modul ini adalah mengatur lalu lintas data aplikasi dan menerapkan perlindungan Middleware (hak akses). Semua permintaan URL (*Uniform Resource Locator*) dicatat di sini sebelum diarahkan ke *Controller* yang bersangkutan.
 
-### 2.2 app\Http\Controllers\AuthController.php
+#### 2 app\Http\Controllers\AuthController.php
 Fungsi utama modul ini adalah gerbang keamanan. Sistem menggunakan *Role-Based Access Control* (RBAC) yang cerdas. Berdasarkan jenis peran (*role*) yang tercantum di *database*, pengguna akan diarahkan (*redirect*) ke gerbang yang berbeda: Admin menuju operasional, Pelanggan menuju *e-commerce*, dan Manajemen menuju *dashboard* finansial.
 
-### 2.3 app\Providers\AppServiceProvider.php
+#### 3 app\Providers\AppServiceProvider.php
 Kode revolusioner di dalam berkas ini bertugas sebagai detektor *Sub-Folder Server* (khususnya untuk *environment* Laragon). Fungsi `boot()` mendeteksi `$_SERVER['REQUEST_URI']` sehingga perutean rute (*Routing*) di dalam Laravel tidak akan pernah mengalami *Error 404 Not Found*. Ini membuat seluruh tautan menu dan fungsi aplikasi 100% stabil.
 
-### 2.4 app\Http\Controllers\Admin\ProductController.php
+#### 4 app\Http\Controllers\Admin\ProductController.php
 Merupakan modul inti untuk menangani *Master Data* Produk (Pigmen, Resin, Solvent). Memiliki fungsi Validasi Input Terpusat yang mencegah administrator memasukkan angka harga (Price) atau stok di bawah nol, sehingga mencegah *database* dari kerusakan atau anomali kuantitas.
 
-### 2.5 app\Http\Controllers\Admin\SupplierController.php
+#### 5 app\Http\Controllers\Admin\SupplierController.php
 Menangani direktori pabrik penyedia barang (Pemasok). *Controller* ini memungkinkan administrator menyimpan alamat, nomor telepon, dan email setiap pabrik untuk keperluan transaksi *Supply Chain* tanpa harus mencari kontak fisik di buku alamat manual.
 
-### 2.6 app\Http\Controllers\Admin\OrderController.php
+#### 6 app\Http\Controllers\Admin\OrderController.php
 *Controller* raksasa yang menangani alur penjualan. Metode unggulannya adalah `approvePayment()`. Selain mengubah status menjadi lunas, logika di dalam fungsi ini memerintahkan komputer untuk secara instan menerbitkan **Nomor Invoice Resmi** tanpa campur tangan manusia. *Database Transaction* dipakai untuk menjamin aliran dana tidak cacat di tengah eksekusi program.
 
-### 2.7 app\Http\Controllers\Admin\PurchaseOrderController.php
+#### 7 app\Http\Controllers\Admin\PurchaseOrderController.php
 Saraf utama dalam siklus Rantai Pasok (*Supply Chain*). Modul ini menangani pembuatan *draft* belanja barang, sebelum dilempar ke meja Manajer. Metode `approve()` secara khusus dikunci oleh sistem, dan **hanya Pimpinan (Manajemen)** yang memiliki otoritas untuk menekan persetujuan pencairan dana pembelian.
 
-### 2.8 app\Http\Controllers\Admin\GoodsReceiptController.php
+#### 8 app\Http\Controllers\Admin\GoodsReceiptController.php
 Menyempurnakan alur *Purchase Order*. Ketika barang tiba di dermaga kantor, metode `store()` akan dipanggil. Sistem akan melakukan validasi kualitatif kuantitas (*Bagus vs Cacat/Reject*), lalu secara ajaib menyuntikkan data tersebut untuk menambah *Stok Gudang Pusat*, dan pada saat bersamaan mendaftarkan transaksi tersebut ke buku **Laporan Pengeluaran Finansial Perusahaan**.
 
-### 2.9 app\Http\Controllers\Admin\LogisticsController.php
+#### 9 app\Http\Controllers\Admin\LogisticsController.php
 Modul pemantauan armada. Fungsi termutakhirnya adalah `generateSuratJalan()`. Menggunakan perpustakaan (*library*) `SimpleSoftwareIO\QrCode`, mesin akan mencetak dokumen Surat Jalan Format PDF yang dilengkapi sebuah **Kotak Kode QR**. Proses penyelesaian pengiriman di rumah pelanggan cukup dilakukan menggunakan pindaian (*scanning*) kamera HP pada kode QR tersebut.
 
-### 2.10 app\Http\Controllers\Management\ManagementController.php
+#### 10 app\Http\Controllers\Management\ManagementController.php
 Modul intelijen bisnis eksklusif untuk kalangan pimpinan. Pada metode `report()`, algoritma diformulasikan untuk menjumlahkan Pendapatan (*Uang Masuk dari Pesanan*) dan menguranginya dengan Pengeluaran Aktif (*Uang Keluar dari Purchase Order yang Barangnya Sudah Tiba*), sehingga menghasilkan angka **Total Laba Bersih (*Net Profit*)** yang absolut dan jujur.
 
-### 2.11 app\Http\Controllers\Admin\ArchiveController.php
+#### 11 app\Http\Controllers\Admin\ArchiveController.php
 Berfungsi sebagai laci mesin waktu perusahaan. Modul ini melakukan kueri (*querying*) dan *pagination* data masif pada riwayat bulan-bulan lampau untuk uang masuk dan keluar, memastikannya dapat dipanggil ulang dalam fraksi detik tanpa membebani server.
 
-### 2.12 app\Http\Controllers\Customer\CustomerDashboardController.php
+#### 12 app\Http\Controllers\Customer\CustomerDashboardController.php
 Pusat navigasi khusus untuk *Point of View* (POV) Pelanggan. Modul ini memberikan informasi rangkuman status seluruh riwayat pesanan yang pernah dibuat oleh akun tersebut, sehingga pelanggan dapat dengan mudah melacak apakah pesanannya sedang diproses, dikirim, atau telah selesai tanpa harus menghubungi tim *Customer Service*.
 
-### 2.13 app\Http\Controllers\Customer\CartController.php
+#### 13 app\Http\Controllers\Customer\CartController.php
 Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme Sesi (*Session*) dinamis untuk menyimpan kumpulan barang ke dalam Keranjang Belanja sebelum *checkout*. Kode ini memiliki algoritma pencegahan stok minus yang memastikan pelanggan tidak dapat membayar barang apabila jumlah pesanan melebihi sisa batas di gudang.
 
 ---
 
-## 3. Tampilan Menu dan Interface
+### Tampilan Menu dan Interface
 
-### 3.1 Halaman Portal Autentikasi (Login)
+#### 1 Halaman Portal Autentikasi (Login)
 **File View**: `resources\views\auth\login.blade.php`
 **Instruksi Screenshot**: Buka halaman awal web (`http://localhost/paramitra-app/public`). Ambil tangkapan layar penuh (Full Screen) yang memperlihatkan kotak putih form Login di tengah dengan latar belakang (*background*) gedung PT Paramitra yang buram bergaya *glassmorphism*.
 *(Sisipkan Gambar Di Sini)*
@@ -534,7 +529,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 **Penjelasan**: Bertindak sebagai titik temu utama yang menjembatani staf, pimpinan, dan pelanggan dengan mesin. Desain *UI* menerapkan efek *glassmorphism* modern dengan latar belakang aktivitas kantor yang mencerminkan profesionalitas korporat. Antarmuka mendukung responsivitas *mobile*.
 
-### 3.2 Halaman Dashboard Pelanggan
+#### 2 Halaman Dashboard Pelanggan
 **File View**: `resources\views\customer\dashboard.blade.php`
 **Instruksi Screenshot**: Login menggunakan akun Pelanggan. Pergi ke menu `Dashboard`. Ambil tangkapan layar penuh yang menampilkan kartu-kartu ringkasan (contoh: "Total Pesanan", "Menunggu Pembayaran", "Diproses") yang berderet di atas layar.
 *(Sisipkan Gambar Di Sini)*
@@ -542,7 +537,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 **Penjelasan**: Beranda bagi para pelanggan yang telah mendaftar. Menampilkan riwayat ringkas tentang pesanan apa saja yang pernah mereka beli dan sejauh mana perkembangannya, meminimalisasi pertanyaan pelanggan kepada *Customer Service*.
 
-### 3.3 Halaman Katalog & Keranjang Belanja Pelanggan
+#### 3 Halaman Katalog & Keranjang Belanja Pelanggan
 **File View**: `resources\views\customer\products.blade.php` & `resources\views\customer\cart.blade.php`
 **Instruksi Screenshot**: Di panel pelanggan, buka menu `Pesan Barang` atau `Keranjang`. Pastikan di layar terlihat daftar produk (Pigmen, Resin, dll.) beserta tabel keranjang belanja yang sudah terisi setidaknya 1 atau 2 produk untuk menunjukkan bahwa fitur interaktifnya berjalan.
 *(Sisipkan Gambar Di Sini)*
@@ -550,7 +545,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 **Penjelasan**: Etalase daring (*e-commerce*) di mana pelanggan dapat menelusuri katalog bahan baku (Solvent, Pigmen). Tersedia tombol interaktif keranjang belanja yang lincah untuk memudahkan pemesanan barang berjumlah jamak.
 
-### 3.4 Halaman Detail Riwayat Pesanan Pelanggan
+#### 4 Halaman Detail Riwayat Pesanan Pelanggan
 **File View**: `resources\views\customer\dashboard.blade.php` & `resources\views\customer\track.blade.php`
 **Instruksi Screenshot**: Buka halaman `Dashboard` Pelanggan, gulir ke tabel Riwayat Pesanan. Jika ada tombol "Lacak" atau "Detail" pada pesanan yang sedang diproses, klik tombol tersebut. Ambil *screenshot* pada saat detail atau *timeline* pelacakan pesanan dimunculkan di layar (baik berupa *modal* atau pindah halaman).
 *(Sisipkan Gambar Di Sini)*
@@ -558,7 +553,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 **Penjelasan**: Layar terperinci bagi pelanggan untuk menelusuri status tagihan (*Invoice*), metode bayar yang harus dituju, atau riwayat langkah pergerakan ekspedisi truk tanpa harus bertanya ke admin.
 
-### 3.5 Halaman Dashboard Staf Admin
+#### 5 Halaman Dashboard Staf Admin
 **File View**: `resources\views\admin\dashboard.blade.php`
 **Instruksi Screenshot**: Logout dari Pelanggan, lalu Login pakai akun Admin. Di halaman pertama (`Dashboard`), ambil screenshot yang menunjukkan kartu statistik warna-warni seperti "Produk Kritis", "Pesanan Masuk", dan "Pengiriman Aktif".
 *(Sisipkan Gambar Di Sini)*
@@ -566,7 +561,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 **Penjelasan**: Pusat komando bagi staf operasional. *Cards Interface* memberikan informasi cepat mengenai berapa banyak pesanan yang butuh dikonfirmasi dan status batas persediaan gudang tanpa staf harus membaca tabel data mentah yang melelahkan mata.
 
-### 3.6 Halaman Manajemen Master Inventori
+#### 6 Halaman Manajemen Master Inventori
 **File View**: `resources\views\admin\products\index.blade.php`
 **Instruksi Screenshot**: Masuk ke menu `Inventori`. Screenshot tabel yang memperlihatkan daftar bahan kimia. Jika memungkinkan, pastikan ada satu produk yang stoknya di bawah 20 agar indikator peringatan stok kritis (tulisan berwarna merah) terlihat menyala di layar.
 *(Sisipkan Gambar Di Sini)*
@@ -574,7 +569,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 **Penjelasan**: Daftar katalog gudang. Terdapat indikator warna (*UI Warning Indicator*), di mana angka sisa produk akan otomatis berubah mencolok saat kuantitasnya nyaris habis.
 
-### 3.7 Halaman Manajemen Supplier
+#### 7 Halaman Manajemen Supplier
 **File View**: `resources\views\admin\suppliers\index.blade.php`
 **Instruksi Screenshot**: Masuk ke menu `Pemasok` (Supplier). Screenshot tabel rapi yang mendata nama-nama PT Pabrik (misal: PT Sudarshan, dll) lengkap dengan nomor telepon dan alamat emailnya.
 *(Sisipkan Gambar Di Sini)*
@@ -582,7 +577,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 **Penjelasan**: Tabel catatan pemasok (Pabrik). Memudahkan operasional untuk selalu ingat dari pabrik mana bahan baku tersebut bisa diisi ulang.
 
-### 3.8 Halaman Transaksi Penjualan Admin
+#### 8 Halaman Transaksi Penjualan Admin
 **File View**: `resources\views\admin\orders\index.blade.php`
 **Instruksi Screenshot**: Buka menu `Transaksi` di bilah sisi (*sidebar*). Screenshot kotak informasi pesanan yang memperlihatkan rincian pesanan baru masuk dan tombol aksi (misalnya tombol hijau "ACC BAYAR" atau tombol hitam "LIHAT RESI").
 *(Sisipkan Gambar Di Sini)*
@@ -590,7 +585,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 **Penjelasan**: Pusat pengolahan pesanan (*Sales Order*). Memuat informasi dari pesanan baru pelanggan yang meminta validasi pelunasan hingga eksekusi pengiriman. Memiliki integrasi tombol "Tandai Lunas" yang akan menerbitkan surat tagihan secara berantai.
 
-### 3.9 Halaman Pembuatan Purchase Order (PO)
+#### 9 Halaman Pembuatan Purchase Order (PO)
 **File View**: `resources\views\admin\purchase-orders\create.blade.php`
 **Instruksi Screenshot**: Buka menu `PO Supplier`, lalu klik `Buat PO Baru`. Isi sedikit formulir tersebut, klik tombol "+ Tambah Produk" agar terlihat dua baris (*Dynamic Rows*). Lalu ambil screenshot yang menunjukkan formulir pembuatan PO tersebut.
 *(Sisipkan Gambar Di Sini)*
@@ -598,7 +593,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 **Penjelasan**: Tampilan formulir pembuatan *draft* belanja. Desainnya mendukung sistem tambah baris dinamis (*Dynamic Rows*), sehingga staf admin dapat menambahkan sepuluh jenis produk pesanan sekaligus hanya dari satu halaman web yang sama.
 
-### 3.10 Halaman Detail PO & Aksi Manajemen
+#### 10 Halaman Detail PO & Aksi Manajemen
 **File View**: `resources\views\admin\purchase-orders\show.blade.php`
 **Instruksi Screenshot**: Login menggunakan akun Manajemen (Manager). Buka menu `PO Supplier`, lalu buka PO yang statusnya masih 'pending'. Screenshot layar tersebut yang menunjukkan dengan jelas adanya tombol "Setujui PO (Approve)".
 *(Sisipkan Gambar Di Sini)*
@@ -606,7 +601,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 **Penjelasan**: Ini merupakan layar otorisasi dua pihak. Bila status *Menunggu Approval*, panel akan memunculkan tombol Setuju/Tolak untuk Manajemen. Bila status sudah *Dikirim*, antarmuka akan menyesuaikan diri memunculkan tombol pemantauan untuk Admin.
 
-### 3.11 Halaman Penerimaan Barang Fisik (Goods Receipt)
+#### 11 Halaman Penerimaan Barang Fisik (Goods Receipt)
 **File View**: `resources\views\admin\purchase-orders\show.blade.php` *(Modal Pengecekan Fisik)*
 **Instruksi Screenshot**: Login kembali sebagai Admin. Buka menu `PO Supplier`, cari PO yang berstatus 'approved', klik detail, lalu klik tombol "Terima Barang Fisik". Screenshot Kotak *Modal* (Formulir Pengecekan Fisik) yang muncul, di mana terdapat input angka "Diterima (Bagus)" dan "Ditolak (Reject)".
 *(Sisipkan Gambar Di Sini)*
@@ -614,7 +609,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 **Penjelasan**: Laman kunci dari Rantai Pasok. Tabel input kuantitatif yang mengharuskan admin menulis ulang hitungan jumlah barang secara fisik. Sangat krusial karena tanpa penyelesaian form ini, uang pengeluaran tidak sah dicatat.
 
-### 3.12 Halaman Pelacakan Ekspedisi Logistik (QR Code)
+#### 12 Halaman Pelacakan Ekspedisi Logistik (QR Code)
 **File View**: `resources\views\admin\logistics\surat_jalan.blade.php`
 **Instruksi Screenshot**: Buka menu `Logistik`, klik "Cetak Surat Jalan" pada salah satu pengiriman yang aktif. PDF akan terbuka di *tab* baru browser Anda. Screenshot file PDF Surat Jalan tersebut secara penuh, pastikan Kotak Hitam Putih Kode QR di sudut kanan atas terlihat dengan sangat jelas.
 *(Sisipkan Gambar Di Sini)*
@@ -622,7 +617,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 **Penjelasan**: *Interface* cetak Surat Jalan PDF. Surat dicetak dalam desain minimalis beserta Kode QR unik yang dicetak tebal pada sudut kanan atas dokumen, yang ditujukan murni sebagai sarana pindaian pelanggan saat serah-terima fisik paket.
 
-### 3.13 Halaman Dashboard Utama Manajemen (Pimpinan)
+#### 13 Halaman Dashboard Utama Manajemen (Pimpinan)
 **File View**: `resources\views\management\dashboard.blade.php`
 **Instruksi Screenshot**: Login menggunakan akun Manajemen (Manager). Di menu `Dashboard`, pastikan ada data transaksi masuk. Ambil screenshot penuh yang menunjukkan Diagram Grafik Batang berwarna-warni yang membandingkan "Uang Pemasukan vs Uang Pengeluaran".
 *(Sisipkan Gambar Di Sini)*
@@ -630,7 +625,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 **Penjelasan**: Representasi grafik warna-warni yang merangkum kesehatan finansial. Diagram akan secara otomatis membandingkan rasio Laba versus Biaya pengeluaran harian, menjadikannya instrumen evaluasi paling mutakhir di level eksekutif.
 
-### 3.14 Halaman Laporan Keuangan Laba Bersih
+#### 14 Halaman Laporan Keuangan Laba Bersih
 **File View**: `resources\views\management\report.blade.php`
 **Instruksi Screenshot**: Di akun Manajemen, buka menu `Laporan Pemasukan & Pengeluaran`. Screenshot tabel ringkasan tersebut. Pastikan kartu yang bertuliskan "NET PROFIT (Laba Bersih)" dengan angka nominal Rupiah (Rp) tertangkap secara utuh.
 *(Sisipkan Gambar Di Sini)*
@@ -638,7 +633,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 **Penjelasan**: Tampilan Laporan Keuangan dengan kemampuan *Print-Friendly UI*. Layar akan beradaptasi memutihkan latar dan menghitamkan seluruh teks bila sensor browser mendeteksi perintah Cetak (CTRL+P) ditekan, guna penyelamatan drastis cairan tinta mesin pencetak kantor.
 
-### 3.15 Halaman Arsip Digital Transaksi
+#### 15 Halaman Arsip Digital Transaksi
 **File View**: `resources\views\management\archives.blade.php`
 **Instruksi Screenshot**: Di akun Manajemen, buka menu `Arsip Digital`. Ubah filter "Bulan" dan "Tahun" ke waktu saat ini. Screenshot layar yang menunjukkan daftar sejarah transaksi yang rapi tanpa perlu gulir tabel tanpa henti (*pagination*).
 *(Sisipkan Gambar Di Sini)*
@@ -648,9 +643,9 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 ---
 
-## 4. Tampilan Input dan Output
+### Tampilan Input dan Output
 
-### 4.1 Input Autentikasi (Login Sistem)
+#### 1 Input Autentikasi (Login Sistem)
 **Input**:
 * **Instruksi Screenshot Input**: Di halaman `login`, ketikkan email dan *password* sembarang (jangan klik login dulu). Ambil *screenshot* layar yang menunjukkan kotak input sedang terisi teks (sebagai simulasi proses mengisi form).
 *(Sisipkan Gambar Di Sini)*
@@ -664,7 +659,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 * **Penjelasan Output**: Gambar di atas menunjukkan *output* atau hasil apabila proses autentikasi berhasil. Sistem akan menampilkan notifikasi sukses dan mengarahkan (*redirect*) pengguna ke halaman *Dashboard* yang sesuai dengan hak akses (Role) masing-masing.
 
-### 4.2 Input Pemesanan Barang (Checkout Pelanggan)
+#### 2 Input Pemesanan Barang (Checkout Pelanggan)
 **Input**:
 * **Instruksi Screenshot Input**: Login sebagai Pelanggan, pilih barang, lalu buka Keranjang (*Cart*). Isi data di bagian formulir *Checkout* (seperti memilih Metode Pembayaran dari *dropdown*). Screenshot halaman keranjang belanja yang sedang terisi ini.
 *(Sisipkan Gambar Di Sini)*
@@ -678,7 +673,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 * **Penjelasan Output**: Gambar di atas merupakan *output* dari proses pembuatan pesanan. Sistem berhasil memproses keranjang belanja, menyimpannya ke dalam *database*, dan menampilkan tagihan pesanan pada halaman Pembayaran pelanggan.
 
-### 4.3 Input Persetujuan Pembayaran & Tagihan (Admin)
+#### 3 Input Persetujuan Pembayaran & Tagihan (Admin)
 **Input**:
 * **Instruksi Screenshot Input**: Login sebagai Admin, buka menu `Transaksi`. Arahkan *mouse* (jangan diklik dulu) pada tombol "ACC BAYAR" hijau pada pesanan yang baru dibuat tadi, lalu ambil *screenshot* untuk menunjukkan posisi tombol persetujuan tersebut.
 *(Sisipkan Gambar Di Sini)*
@@ -692,7 +687,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 * **Penjelasan Output**: Gambar di atas menunjukkan *output* setelah Admin menyetujui pembayaran. Sistem secara otomatis merubah status pesanan menjadi lunas, serta menerbitkan resi (Invoice) resmi.
 
-### 4.4 Input Pembuatan Pesanan Pabrik (Purchase Order)
+#### 4 Input Pembuatan Pesanan Pabrik (Purchase Order)
 **Input**:
 * **Instruksi Screenshot Input**: Login Admin, buka `PO Supplier` -> `Buat PO Baru`. Isi form seperti Pemilihan Pabrik (Supplier) dan tambahkan 2 baris produk. Screenshot form yang sudah terisi penuh ini (sebelum tombol simpan ditekan).
 *(Sisipkan Gambar Di Sini)*
@@ -706,7 +701,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 * **Penjelasan Output**: Gambar di atas memperlihatkan *output* berupa penambahan data riwayat pemesanan pabrik yang baru dibuat, dengan status menunggu persetujuan (Approval) dari Manajemen.
 
-### 4.5 Input Penerimaan Barang Fisik (Stok Masuk)
+#### 5 Input Penerimaan Barang Fisik (Stok Masuk)
 **Input**:
 * **Instruksi Screenshot Input**: Dengan asumsi PO sudah disetujui, login sebagai Admin, buka `PO Supplier`, buka detail PO tersebut, dan klik "Terima Barang Fisik". Saat form *modal* pengecekan fisik muncul, ketikkan angka pada kolom "Kuantitas Diterima Bagus", lalu ambil *screenshot* form input tersebut.
 *(Sisipkan Gambar Di Sini)*
@@ -720,7 +715,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 * **Penjelasan Output**: Gambar di atas memperlihatkan *output* perubahan sistem di mana angka stok produk pada master data Inventori berhasil bertambah secara presisi sesuai dengan jumlah barang yang baru saja diterima.
 
-### 4.6 Input Pemrosesan Surat Jalan Logistik
+#### 6 Input Pemrosesan Surat Jalan Logistik
 **Input**:
 * **Instruksi Screenshot Input**: Buka menu `Pengiriman` di bilah sisi. Pada bagian 'Pesanan Siap Kirim', klik tombol "Proses Pengiriman" pada pesanan yang sudah lunas. Di dalam form modal yang muncul, pilih Armada Truk dari daftar *dropdown* (misal: Truck Hino Wingbox). Ambil *screenshot* layar saat form ini sedang terisi sebelum menekan tombol simpan.
 *(Sisipkan Gambar Di Sini)*
@@ -734,7 +729,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 * **Penjelasan Output**: Gambar di atas adalah *output* dari sistem logistik berupa dokumen Surat Jalan PDF otomatis yang berisi data alamat pelanggan, kode pelacakan, serta kode *Barcode/QR Code* yang valid.
 
-### 4.7 Output Laporan Laba Bersih Otomatis
+#### 7 Output Laporan Laba Bersih Otomatis
 **Input**:
 * **Instruksi**: *Modul ini murni sistem penampil dan tidak memerlukan input ketik (Form) dari manusia secara statis.* Anda cukup melakukan **satu Screenshot** saja pada outputnya. Sistem otomatis menyedot *Big Data* transaksi dari balik tirai menggunakan algoritma *ManagementController*.
 **Output**:
@@ -747,7 +742,7 @@ Mesin utama transaksi pelanggan (*e-commerce*). Modul ini menggunakan mekanisme 
 
 ---
 
-# 7. Cara Pindah Device (Migrasi)
+## 💻 Cara Pindah Device (Migrasi)
 
 <div align="center">
   <p>Panduan Resmi Tata Cara Pemindahan Sistem Aplikasi PT Paramitra Praya Prawatya Antar Perangkat Komputer (100% Berfungsi Tanpa Cacat).</p>
@@ -854,7 +849,7 @@ Sistem Aplikasi PT Paramitra Praya Prawatya akan terbuka dengan terang benderang
 
 ---
 
-# 8. Skenario Presentasi Dosen
+## 🎓 Skenario Presentasi & Uji Sistem
 
 Dokumen ini disusun khusus sebagai skenario demo dan alur bicara (*script*) yang mendetail untuk presentasi di hadapan Dosen Penguji. Anda dapat menyimpan file ini sebagai PDF untuk pegangan pribadi Anda saat maju presentasi.
 
