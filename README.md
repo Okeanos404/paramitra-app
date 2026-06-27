@@ -4,8 +4,9 @@
   
   <p>
     <img src="https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=for-the-badge" alt="Status" />
+    <img src="https://img.shields.io/badge/Framework-Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
+    <img src="https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
     <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License" />
-    <img src="https://img.shields.io/badge/Language-PHP_Laravel-orange?style=for-the-badge" alt="Language" />
   </p>
 </div>
 
@@ -14,9 +15,11 @@
 ## 📑 Table of Contents
 - [👋 About The Project](#-about-the-project)
 - [✨ Key Features](#-key-features)
-- [🚀 Quick Start (Installation)](#-quick-start-installation)
+- [🛠️ Built With](#-built-with)
+- [🚀 Getting Started (Installation)](#-getting-started-installation)
 - [🔑 Test Credentials](#-test-credentials)
 - [📂 Detailed Documentation](#-detailed-documentation)
+- [📜 License](#-license)
 
 <br>
 
@@ -35,42 +38,90 @@ Despite its enterprise-grade capabilities, the system is designed with a **highl
 This system caters to 3 primary user roles: **Management**, **Operational Staff (Admin)**, and **Customers**.
 
 ### 🛒 1. Frictionless Ordering & E-Commerce
-- **Online Catalog for Customers**: Customers can browse product availability in real-time, view pricing, and seamlessly checkout via the built-in cart system.
-- **Dynamic Fast-Form for Staff**: For offline or phone orders, staff can utilize a dynamic Javascript-powered form to add dozens of product rows instantly without page reloads.
+- **Online Catalog**: Customers can browse product availability, view pricing, and seamlessly checkout.
+- **Dynamic Fast-Form**: For offline orders, staff can utilize a dynamic Javascript-powered form to add dozens of product rows instantly without page reloads.
 
 ### 🧾 2. Smart Logistics (QR Code) & Automated Invoicing
 - **One-Click Invoicing**: Approving a customer's payment automatically generates an industry-standard PDF Invoice.
-- **QR Code Delivery Validation**: Generated Delivery Orders (Surat Jalan) contain a unique QR Code. Upon physical delivery, customers simply scan the QR code using their smartphone camera. The system validates the delivery in real-time and automatically syncs the stock and financial ledger. No physical signatures required!
+- **QR Code Delivery Validation**: Generated Delivery Orders (Surat Jalan) contain a unique QR Code. Upon physical delivery, customers simply scan the QR code using their smartphone camera to validate the delivery in real-time.
 
 ### 🏭 3. Warehouse & Supply Chain Management
 - **Purchase Orders**: Staff can draft official purchase orders to external factory suppliers.
-- **Multi-Warehouse Tracking**: Supports robust inventory movement across Central, Regional, and Distribution warehouses.
 - **Automated Stock Ingestion**: When supplier shipments arrive, a Goods Receipt form validates the physical count. Approving this form instantly increments warehouse stock and securely logs the expenditure to the financial ledger.
 
 ### 📊 4. Executive Analytics Dashboard
 - **Real-Time Financial Charts**: A visually stunning Chart.js dashboard provides management with instant comparisons between revenue and expenditures.
-- **Automated Net Profit Calculation**: The system automatically subtracts operational costs from gross sales, presenting an accurate Net Profit metric in real-time.
 - **Print-Friendly CSS**: Pressing `Ctrl + P` strips the UI of colors and sidebars, rendering a crisp, black-and-white financial report optimized for office printers.
 
 ---
 
-## 🚀 Quick Start (Installation)
+## 🛠️ Built With
+This project leverages modern web technologies to ensure performance, security, and scalability:
+- **[Laravel](https://laravel.com/)** - The PHP framework for web artisans.
+- **[MySQL](https://www.mysql.com/)** - Relational database management system.
+- **[Chart.js](https://www.chartjs.org/)** - For dynamic data visualization.
+- **[SimpleSoftwareIO/QrCode](https://www.simplesoftware.io/#/docs/qrcode)** - For QR code generation in PDF documents.
 
-Getting the system up and running on a local environment is straightforward:
+---
 
-1. Ensure a local web server environment like **Laragon** or **XAMPP** is installed.
-2. Clone or extract this repository into your `www` (Laragon) or `htdocs` (XAMPP) directory.
-3. Start the Apache and MySQL services.
-4. Navigate to the application via your web browser:
-   ```text
-   http://localhost/paramitra-app/public
+## 🚀 Getting Started (Installation)
+
+Since this repository will ignore dependencies (like `vendor/` and `.env`), follow these standard Laravel installation steps to run the project locally.
+
+### Prerequisites
+Make sure you have the following installed on your machine:
+- **PHP** >= 8.1
+- **Composer**
+- **Node.js** & **NPM**
+- **MySQL** (via XAMPP/Laragon)
+
+### Installation Steps
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/paramitra-app.git
+   cd paramitra-app
    ```
-*(Note: The system features intelligent routing that automatically detects sub-folder installations, preventing 404 routing errors without manual .htaccess configuration).*
+
+2. **Install PHP Dependencies**
+   ```bash
+   composer install
+   ```
+
+3. **Install NPM Dependencies & Compile Assets**
+   ```bash
+   npm install
+   npm run build
+   ```
+
+4. **Environment Setup**
+   Copy the example environment file and set up your database credentials inside `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+   *(Make sure to create an empty database named `paramitra_app` in your MySQL server before proceeding).*
+
+5. **Generate Application Key**
+   ```bash
+   php artisan key:generate
+   ```
+
+6. **Run Migrations and Seeders**
+   This command will build the database tables and populate them with dummy data (including the test accounts).
+   ```bash
+   php artisan migrate --seed
+   ```
+
+7. **Serve the Application**
+   ```bash
+   php artisan serve
+   ```
+   Open your browser and visit `http://localhost:8000`.
 
 ---
 
 ## 🔑 Test Credentials
-You can explore the system's role-based access control using the following test accounts (Password for all accounts is: **password**):
+Explore the system's role-based access control using the following seeded accounts (Password for all accounts is: **password**):
 
 - **Operational Staff (Admin)**: `admin@paramitra.com`
 - **Management (Executive)**: `management@paramitra.com`
@@ -80,7 +131,12 @@ You can explore the system's role-based access control using the following test 
 
 ## 📂 Detailed Documentation
 For detailed operational workflows, technical instructions, and migration guides, please refer to the supplementary documentation file:
-- 📖 [Detailed Explanations & Instructions (SYSTEM_DOCUMENTATION.txt)](SYSTEM_DOCUMENTATION.txt)
+- 📖 [SYSTEM_DOCUMENTATION.txt](SYSTEM_DOCUMENTATION.txt)
+
+---
+
+## 📜 License
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 *Developed with a commitment to the digital advancement of PT Paramitra Praya Prawatya.* 🚀
