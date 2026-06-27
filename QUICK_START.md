@@ -33,7 +33,7 @@ Masih menggunakan akun Admin:
 2. Jika ada pesanan yang siap dikirim, tekan tombol **"Proses Pengiriman"**.
 3. Sistem akan memunculkan nomor resi. 
 4. Sekarang, klik menu **"Surat Jalan"** di sebelah kiri. 
-5. Buka Surat Jalan yang baru saja terbentuk, lalu tekan **"Cetak / Lihat QR"**. 
+5. Klik tombol **"Cetak DO / QR"** pada data surat jalan yang baru saja terbentuk. 
 6. Anda akan melihat sebuah lembar dokumen resmi yang ada gambar kotak **Kode QR**-nya! (Inilah yang nantinya akan disorot oleh HP pelanggan saat barang tiba).
 
 ---

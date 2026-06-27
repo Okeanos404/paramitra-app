@@ -283,7 +283,7 @@
                 @endif
 
                 <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-slate-800 to-slate-900 flex items-center justify-center text-white text-sm font-bold shadow-xl shadow-slate-200">
-                    {{ substr(Auth::user()->name, 0, 1) }}
+                    {{ Auth::user()->role === 'pelanggan' ? 'C' : substr(Auth::user()->name, 0, 1) }}
                 </div>
             </div>
         </header>

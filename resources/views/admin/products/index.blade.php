@@ -175,7 +175,7 @@
     }
 
     function editProduct(product) {
-        document.getElementById('form-edit').action = `/admin/products/${product.id}`;
+        document.getElementById('form-edit').action = `{{ url('admin/products') }}/${product.id}`;
         document.getElementById('edit-nama').value = product.nama_produk;
         document.getElementById('edit-kategori').value = product.kategori;
         document.getElementById('edit-stok').value = product.stok;

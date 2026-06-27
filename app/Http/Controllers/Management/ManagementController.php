@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 
 class ManagementController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $total_revenue = Pesanan::where('status', 'selesai')->sum('total_harga');
         $total_expense = PurchaseOrder::where('status', 'received')->sum('total_amount');
@@ -22,29 +22,51 @@ class ManagementController extends Controller
         $recent_sales = Pesanan::with('user')->where('status', 'selesai')->latest()->take(10)->get();
         $recent_purchases = PurchaseOrder::with('supplier')->where('status', 'received')->latest()->take(10)->get();
 
-        // Chart Data (Last 6 Months)
+        $range = $request->get('range', 6);
+        
+        // Chart Data
         $chartData = [
             'labels' => [],
             'pemasukan' => [],
             'pengeluaran' => []
         ];
 
-        for ($i = 5; $i >= 0; $i--) {
-            $month = now()->subMonths($i);
-            $chartData['labels'][] = $month->format('M Y');
-            
-            $chartData['pemasukan'][] = Pesanan::where('status', 'selesai')
-                ->whereYear('tanggal_pesanan', $month->year)
-                ->whereMonth('tanggal_pesanan', $month->month)
-                ->sum('total_harga');
+        if ($range == 1) {
+            $titleRange = '1 Bulan Terakhir (Harian)';
+            // 30 hari terakhir
+            for ($i = 29; $i >= 0; $i--) {
+                $date = now()->subDays($i);
+                $chartData['labels'][] = $date->format('d M');
                 
-            $chartData['pengeluaran'][] = PurchaseOrder::where('status', 'received')
-                ->whereYear('tanggal_po', $month->year)
-                ->whereMonth('tanggal_po', $month->month)
-                ->sum('total_amount');
+                $chartData['pemasukan'][] = Pesanan::where('status', 'selesai')
+                    ->whereDate('tanggal_pesanan', $date->toDateString())
+                    ->sum('total_harga');
+                    
+                $chartData['pengeluaran'][] = PurchaseOrder::where('status', 'received')
+                    ->whereDate('tanggal_po', $date->toDateString())
+                    ->sum('total_amount');
+            }
+        } else {
+            $months = $range == 12 ? 12 : 6;
+            $titleRange = $months == 12 ? '1 Tahun Terakhir' : '6 Bulan Terakhir';
+            
+            for ($i = $months - 1; $i >= 0; $i--) {
+                $month = now()->subMonths($i);
+                $chartData['labels'][] = $month->format('M Y');
+                
+                $chartData['pemasukan'][] = Pesanan::where('status', 'selesai')
+                    ->whereYear('tanggal_pesanan', $month->year)
+                    ->whereMonth('tanggal_pesanan', $month->month)
+                    ->sum('total_harga');
+                    
+                $chartData['pengeluaran'][] = PurchaseOrder::where('status', 'received')
+                    ->whereYear('tanggal_po', $month->year)
+                    ->whereMonth('tanggal_po', $month->month)
+                    ->sum('total_amount');
+            }
         }
 
-        return view('management.dashboard', compact('total_revenue', 'total_expense', 'low_stock_count', 'active_shipments_count', 'recent_sales', 'recent_purchases', 'chartData'));
+        return view('management.dashboard', compact('total_revenue', 'total_expense', 'low_stock_count', 'active_shipments_count', 'recent_sales', 'recent_purchases', 'chartData', 'titleRange', 'range'));
     }
 
     public function report(Request $request)

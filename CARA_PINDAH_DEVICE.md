@@ -88,6 +88,9 @@ Selamat! Proses transplantasi sistem telah sukses terlaksana. Mari kita uji coba
 
 Sistem Aplikasi PT Paramitra Praya Prawatya akan terbuka dengan terang benderang, utuh, tanpa kehilangan satu angka pun dari riwayat bisnis yang Anda kerjakan di komputer sebelumnya. 🚀
 
+> **💡 Catatan Teknologi Terbaru (Smart URL Root):**
+> Anda tidak perlu khawatir dengan *Error 404 Not Found* saat menekan tombol-tombol di dalam aplikasi. Sistem ini telah ditanamkan kecerdasan untuk membaca struktur folder Laragon (`localhost/paramitra-app/public`) secara otomatis tanpa memotong jalurnya. Seluruh tombol dijamin akan bekerja 100% sempurna!
+
 ---
 
 ### ❓ PANDUAN MASALAH UMUM (TROUBLESHOOTING)

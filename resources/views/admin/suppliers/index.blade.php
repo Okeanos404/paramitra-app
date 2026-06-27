@@ -7,7 +7,7 @@
     <div class="flex items-center justify-between">
         <h2 class="text-3xl font-black text-slate-800">Manajemen <span class="text-indigo-600">Supplier</span></h2>
         @if(Auth::user()->role === 'admin')
-        <a href="/admin/suppliers/create" class="px-6 py-2 bg-indigo-600 text-white rounded-xl font-bold flex items-center gap-2 hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-600/30">
+        <a href="{{ route('suppliers.create') }}" class="px-6 py-2 bg-indigo-600 text-white rounded-xl font-bold flex items-center gap-2 hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-600/30">
             <i data-lucide="building" class="w-5 h-5"></i> Tambah Supplier
         </a>
         @endif
@@ -32,7 +32,7 @@
                     @forelse($suppliers as $supplier)
                     <tr class="hover:bg-slate-50/50 transition-colors">
                         <td class="px-6 py-4">
-                            <a href="/admin/suppliers/{{ $supplier->id }}" class="font-bold text-indigo-600 hover:text-indigo-800 transition-colors">
+                            <a href="{{ route('suppliers.show', $supplier->id) }}" class="font-bold text-indigo-600 hover:text-indigo-800 transition-colors">
                                 {{ $supplier->nama_supplier }}
                             </a>
                         </td>
@@ -57,7 +57,7 @@
                         @if(Auth::user()->role === 'admin')
                         <td class="px-6 py-4">
                             <div class="flex items-center justify-center gap-2">
-                                <a href="/admin/suppliers/{{ $supplier->id }}/edit" class="p-2 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-colors" title="Edit Supplier">
+                                <a href="{{ route('suppliers.edit', $supplier->id) }}" class="p-2 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-colors" title="Edit Supplier">
                                     <i data-lucide="edit" class="w-5 h-5"></i>
                                 </a>
                             </div>

@@ -24,7 +24,7 @@ Tombol **"Tambah Produk Lain"** adalah fitur ajaib. Staf bisa menekannya belasan
 
 ### ✅ Penagihan Pintar (Invoice Otomatis)
 Staf tidak perlu lagi pusing menghitung total harga di kalkulator, menambah biaya pajak, lalu mengetiknya di Microsoft Word.
-Ketika pelanggan menyatakan telah mentransfer pembayaran ke bank kita, staf cukup menekan tombol **"Setujui Pembayaran"**. 
+Ketika pelanggan menyatakan telah mentransfer pembayaran ke bank kita, staf cukup menekan tombol **"ACC Bayar"**. 
 Tugas staf selesai! Komputer akan langsung mengetik lembar Surat Tagihan Resmi (Invoice PDF) dan merapikan catatan keuangan masuk secara otomatis.
 
 ---
@@ -55,10 +55,11 @@ Kita tidak perlu lagi mencari kartu nama pabrik penyedia bahan baku. Sistem memi
 
 ### ✅ Barang Tiba, Otomatis Masuk Gudang
 Staf membuat pesanan pembelian kepada pabrik menggunakan sistem.
-Ketika kapal kargo atau truk pabrik tiba membawa barang yang kita pesan, Staf hanya perlu menekan tombol **"Penerimaan Barang"** di sistem.
+Ketika kapal kargo atau truk pabrik tiba membawa barang yang kita pesan, Staf hanya perlu menekan tombol **"Terima Barang Fisik"** di sistem.
+Ini akan memunculkan **Formulir Pengecekan Fisik**. Staf harus mengisi jumlah asli barang yang datang, lalu mengeklik tombol **"Simpan & Update Stok"**.
 Kejadian ini akan memicu dua hal hebat sekaligus secara otomatis:
 1. Jumlah persediaan barang kita di dalam "Gudang Pusat" seketika bertambah.
-2. Uang pengeluaran perusahaan untuk membayar pabrik langsung ditambahkan ke dalam buku Laporan Kerugian (Pengeluaran).
+2. Uang pengeluaran perusahaan untuk membayar pabrik menjadi sah, dan langsung ditambahkan ke dalam buku Laporan Pengeluaran.
 
 ---
 

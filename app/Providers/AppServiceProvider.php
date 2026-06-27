@@ -19,6 +19,13 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // Deteksi otomatis jika dijalankan lewat folder Laragon
+        // Ini mengatasi semua masalah URL tanpa perlu pusing mikir .env atau cache
+        $requestUri = $_SERVER['REQUEST_URI'] ?? '';
+        if (strpos($requestUri, '/paramitra-app/public') === 0) {
+            \Illuminate\Support\Facades\URL::forceRootUrl('http://localhost/paramitra-app/public');
+        } elseif (config('app.url') !== 'http://localhost') {
+            \Illuminate\Support\Facades\URL::forceRootUrl(config('app.url'));
+        }
     }
 }

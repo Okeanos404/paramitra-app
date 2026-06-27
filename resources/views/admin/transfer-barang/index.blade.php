@@ -6,7 +6,7 @@
 <div class="space-y-8">
     <div class="flex items-center justify-between">
         <h2 class="text-3xl font-black text-slate-800">Transfer <span class="text-indigo-600">Barang</span></h2>
-        <a href="/admin/transfer-barang/create" class="px-6 py-2 bg-indigo-600 text-white rounded-xl font-bold flex items-center gap-2 hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-600/30">
+        <a href="{{ route('transfer-barang.create') }}" class="px-6 py-2 bg-indigo-600 text-white rounded-xl font-bold flex items-center gap-2 hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-600/30">
             <i data-lucide="arrow-right-left" class="w-5 h-5"></i> Buat Transfer Baru
         </a>
     </div>
@@ -53,7 +53,7 @@
                             @endif
                         </td>
                         <td class="px-6 py-4 text-center">
-                            <a href="/admin/transfer-barang/{{ $transfer->id }}" class="inline-flex items-center gap-2 px-4 py-2 bg-slate-50 text-slate-600 rounded-lg hover:bg-slate-100 transition-colors text-sm font-bold">
+                            <a href="{{ route('transfer-barang.show', $transfer->id) }}" class="inline-flex items-center gap-2 px-4 py-2 bg-slate-50 text-slate-600 rounded-lg hover:bg-slate-100 transition-colors text-sm font-bold">
                                 <i data-lucide="eye" class="w-4 h-4"></i> Detail
                             </a>
                         </td>

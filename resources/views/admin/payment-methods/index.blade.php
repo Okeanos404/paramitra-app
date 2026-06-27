@@ -6,7 +6,7 @@
 <div class="space-y-8">
     <div class="flex items-center justify-between">
         <h2 class="text-3xl font-black text-slate-800">Metode <span class="text-indigo-600">Bayar</span></h2>
-        <a href="/admin/payment-methods/create" class="px-6 py-2 bg-indigo-600 text-white rounded-xl font-bold flex items-center gap-2 hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-600/30">
+        <a href="{{ route('payment-methods.create') }}" class="px-6 py-2 bg-indigo-600 text-white rounded-xl font-bold flex items-center gap-2 hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-600/30">
             <i data-lucide="plus" class="w-5 h-5"></i> Tambah Metode
         </a>
     </div>
@@ -42,10 +42,10 @@
                         </td>
                         <td class="px-6 py-4">
                             <div class="flex items-center justify-center gap-2">
-                                <a href="/admin/payment-methods/{{ $method->id }}/edit" class="p-2 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-colors" title="Edit Metode">
+                                <a href="{{ route('payment-methods.edit', $method->id) }}" class="p-2 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-colors" title="Edit Metode">
                                     <i data-lucide="edit" class="w-5 h-5"></i>
                                 </a>
-                                <form method="POST" action="/admin/payment-methods/{{ $method->id }}" onsubmit="return confirm('Apakah Anda yakin ingin menghapus metode pembayaran ini?');" class="inline">
+                                <form method="POST" action="{{ route('payment-methods.destroy', $method->id) }}" onsubmit="return confirm('Apakah Anda yakin ingin menghapus metode pembayaran ini?');" class="inline">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="p-2 text-slate-400 hover:text-red-600 hover:bg-red-50 rounded-xl transition-colors" title="Hapus Metode">

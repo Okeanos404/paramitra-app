@@ -77,6 +77,12 @@ class LogisticsController extends Controller
 
         if ($request->status_kirim === 'diterima') {
             $pengiriman->pesanan->update(['status' => 'selesai']);
+            if ($pengiriman->suratJalan && $pengiriman->suratJalan->status !== 'diterima') {
+                $pengiriman->suratJalan->update([
+                    'status' => 'diterima',
+                    'waktu_penerimaan' => now()
+                ]);
+            }
         }
 
         return redirect()->back()->with('success', 'Lokasi pengiriman diperbarui.');

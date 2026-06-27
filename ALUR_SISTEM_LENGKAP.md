@@ -26,8 +26,9 @@ Berikut adalah urutan kegiatan harian dari hulu ke hilir:
 
 1. Staf membuka menu "Pesanan Pembelian" lalu memilih pabrik tujuan (Contoh: Pabrik Sudarshan).
 2. Staf memasukkan jenis dan jumlah barang yang ingin dibeli, lalu menekan tombol "Kirim".
-3. Setelah paket kiriman tiba di kantor, Staf menekan tombol **"Terima Barang"**.
-4. **Proses Otomatis:** Saat itu juga, jumlah barang di dalam "Gudang Pusat" kita akan langsung bertambah. Di saat yang sama, uang perusahaan yang terpakai untuk beli barang itu akan langsung masuk ke catatan Laporan Pengeluaran.
+3. Setelah paket kiriman tiba di kantor, Staf menekan tombol **"Terima Barang Fisik"**.
+4. **Wajib Isi Formulir:** Staf akan dihadapkan pada formulir pengecekan untuk mencocokkan jumlah barang fisik. Staf harus mengisi jumlah yang benar dan menekan **"Simpan & Update Stok"**.
+5. **Proses Otomatis:** Detik itu juga, jumlah barang di dalam "Gudang Pusat" kita akan langsung bertambah. Di saat yang sama, uang perusahaan yang terpakai untuk beli barang itu akan sah tercatat dan langsung masuk ke Laporan Pengeluaran.
 
 ---
 
@@ -50,7 +51,7 @@ Ada dua cara pesanan bisa masuk ke sistem kita:
 *(Dilakukan oleh: Staf Operasional)*
 
 1. Begitu ada pelanggan yang mengabarkan sudah transfer uang, Staf akan mencari pesanan orang tersebut.
-2. Staf cukup mengeklik satu tombol ajaib: **"Setujui Pembayaran"**.
+2. Staf cukup mengeklik satu tombol ajaib: **"ACC Bayar"**.
 3. **Proses Otomatis:** Sistem akan seketika membuatkan **Surat Tagihan (Invoice) PDF Resmi** yang rapi. Status pesanan berubah menjadi "Lunas", dan uang dari hasil jualan itu otomatis masuk ke catatan Laporan Pemasukan.
 
 ---

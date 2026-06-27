@@ -42,7 +42,9 @@
                                     <i data-lucide="loader" class="w-3 h-3 animate-spin"></i> Dalam Perjalanan
                                 </span>
                             @else
-                                <span class="px-3 py-1 bg-slate-100 text-slate-600 border border-slate-200 rounded-full text-[10px] font-bold uppercase tracking-widest">Persiapan</span>
+                                <span class="px-3 py-1 bg-amber-50 text-amber-600 border border-amber-200 rounded-full text-[10px] font-bold uppercase tracking-widest flex items-center gap-1 w-max">
+                                    <i data-lucide="package" class="w-3 h-3"></i> Siap Dikirim
+                                </span>
                             @endif
                         </td>
                         <td class="px-6 py-4 text-center">

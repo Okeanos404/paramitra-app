@@ -65,7 +65,18 @@ class SuratJalanController extends Controller
             'penerima_ttd' => $validated['penerima_ttd'] ?? null,
         ]);
 
-        return redirect()->back()->with('success', 'Surat Jalan marked as received');
+        if ($suratJalan->pengiriman) {
+            $suratJalan->pengiriman->update(['status_kirim' => 'diterima']);
+            $suratJalan->pengiriman->distribusi()->create([
+                'lokasi_terkini' => 'Diterima Pelanggan',
+                'catatan' => 'Pesanan diterima (Terkonfirmasi via QR Surat Jalan).',
+            ]);
+            if ($suratJalan->pengiriman->pesanan) {
+                $suratJalan->pengiriman->pesanan->update(['status' => 'selesai']);
+            }
+        }
+
+        return redirect()->back()->with('success', 'Surat Jalan marked as received and order completed.');
     }
 
     protected function generateNoSuratJalan()

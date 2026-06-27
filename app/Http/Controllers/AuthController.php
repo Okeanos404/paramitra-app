@@ -25,11 +25,11 @@ class AuthController extends Controller
             $role = Auth::user()->role;
             
             if ($role === 'admin') {
-                return redirect()->intended('admin/dashboard');
+                return redirect()->intended('admin/dashboard')->with('success', 'Berhasil Login!');
             } elseif ($role === 'manajemen') {
-                return redirect()->intended('manajemen/dashboard');
+                return redirect()->intended('manajemen/dashboard')->with('success', 'Berhasil Login!');
             } else {
-                return redirect()->intended('customer/dashboard');
+                return redirect()->intended('customer/dashboard')->with('success', 'Berhasil Login!');
             }
         }
 

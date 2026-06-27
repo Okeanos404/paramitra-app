@@ -25,7 +25,7 @@ class CustomerShipmentController extends Controller
         }
 
         $shipment->load(['pesanan', 'suratJalan', 'distribusi']);
-        return view('customer.shipments.show', compact('shipment'));
+        return view('customer.shipments.track', compact('shipment'));
     }
 
     public function track(Pengiriman $shipment)

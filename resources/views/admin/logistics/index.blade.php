@@ -149,7 +149,8 @@
 
     function openTrackModal(shipment) {
         const form = document.getElementById('form-update-track');
-        form.action = `/admin/logistics/${shipment.id}/track`;
+        // Gunakan window.location.pathname agar mengikuti folder instalasi (Laragon)
+        form.action = window.location.pathname + '/' + shipment.id + '/track';
         document.getElementById('edit-kurir').value = shipment.kurir;
         toggleModal('modal-update-track');
     }

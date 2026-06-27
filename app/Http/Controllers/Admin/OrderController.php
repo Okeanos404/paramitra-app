@@ -122,6 +122,13 @@ class OrderController extends Controller
                     'lokasi_terkini' => 'Diterima Pelanggan',
                     'catatan' => 'Pesanan telah sampai dan diterima dengan baik oleh pelanggan.',
                 ]);
+                
+                if ($pesanan->pengiriman->suratJalan && $pesanan->pengiriman->suratJalan->status !== 'diterima') {
+                    $pesanan->pengiriman->suratJalan->update([
+                        'status' => 'diterima',
+                        'waktu_penerimaan' => now()
+                    ]);
+                }
             } else {
                 $pengiriman = \App\Models\Pengiriman::create([
                     'pesanan_id' => $pesanan->id,

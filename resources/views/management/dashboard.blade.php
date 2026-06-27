@@ -72,7 +72,16 @@
 
     <!-- Animated Chart Section -->
     <div class="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-xl shadow-slate-200/10">
-        <h3 class="text-xl font-black text-slate-800 mb-6">Tren Finansial (6 Bulan Terakhir)</h3>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+            <h3 class="text-xl font-black text-slate-800">Tren Finansial <span class="text-indigo-600">({{ $titleRange }})</span></h3>
+            <form method="GET" class="flex items-center gap-2">
+                <select name="range" onchange="this.form.submit()" class="px-4 py-2 border border-slate-200 rounded-xl focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none text-sm font-bold text-slate-600 bg-slate-50 cursor-pointer">
+                    <option value="1" {{ $range == 1 ? 'selected' : '' }}>1 Bulan Terakhir (Harian)</option>
+                    <option value="6" {{ $range == 6 ? 'selected' : '' }}>6 Bulan Terakhir</option>
+                    <option value="12" {{ $range == 12 ? 'selected' : '' }}>1 Tahun Terakhir</option>
+                </select>
+            </form>
+        </div>
         <div class="relative h-[400px] w-full">
             <canvas id="financialChart"></canvas>
         </div>

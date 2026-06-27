@@ -41,6 +41,15 @@ Pekerjaan perbaikan yang tadinya sempat bermasalah kini telah dinyatakan bersih 
 
 ---
 
+## 🔧 PEMBARUAN TEKNIS TERBARU (BUGFIXES & PENYEMPURNAAN)
+
+Tim pengembang baru saja melakukan penyempurnaan besar-besaran untuk menambal kelemahan sistem sebelumnya:
+- **Tahan Banting di Segala Folder (Smart URL Root):** Sebelumnya, sistem sering kebingungan (Error 404 Not Found) jika dipasang di dalam *sub-folder* Laragon (seperti `localhost/paramitra-app/public`). Kini, sistem telah ditanamkan detektor `REQUEST_URI` cerdas. Semua tombol dan tautan dijamin 100% patuh dan tidak akan lagi memotong nama folder Anda!
+- **Pembersihan Tautan Kaku (*Hardcoded Links*):** Seluruh tombol di menu Purchase Order, Transfer Barang, Metode Pembayaran, Supplier, hingga Pelacakan Logistik telah dirombak. Tidak ada lagi tautan mati; semuanya menggunakan rute dinamis pintar dari Laravel.
+- **Penyempurnaan Alur Akuntansi (Purchase Order):** Telah ditegaskan bahwa sebuah pengeluaran belanja (PO) HANYA akan masuk ke Laporan dan Arsip Keuangan apabila fisik barangnya telah benar-benar tiba di gudang. Staf harus menekan "Terima Barang Fisik", mengisi formulir, dan mengeklik "Simpan & Update Stok" agar sistem mengakuinya sebagai pengeluaran sah. Hal ini mencegah uang perusahaan tercatat keluar sebelum barang nyata diterima.
+
+---
+
 ## 🎓 KATA PENUTUP
 
 Perangkat lunak ini tidak hanya menjadi pajangan yang indah dilihat, namun benar-benar menjadi alat bantu operasional yang sangat cerdas, ramah pengguna, dan dapat diandalkan oleh siapa saja di PT Paramitra Praya Prawatya. 🚀

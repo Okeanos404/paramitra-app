@@ -34,7 +34,7 @@ Sistem ini melayani 3 kelompok orang sekaligus: **Pimpinan (Bos)**, **Staf Kanto
 ### 🏭 3. Mengatur Gudang & Belanja ke Pabrik
 - **Pesan ke Pabrik (Purchase Order)**: Staf bisa membuat surat pesanan resmi ke pabrik penyedia barang dan mencatatnya.
 - **Stok Tiga Gudang**: Mendukung pencatatan untuk Gudang Pusat (Jakarta), Gudang Regional (Surabaya), dan Gudang Distribusi (Medan). Kita juga bisa memindahkan barang antar gudang tanpa takut stoknya selisih.
-- **Otomatis Masuk Gudang**: Begitu kiriman pabrik tiba, staf tinggal tekan "Terima", dan angka persediaan barang di gudang langsung bertambah sendiri.
+- **Otomatis Masuk Gudang**: Begitu kiriman pabrik tiba, staf tinggal mengeklik "Terima Barang Fisik", mengisi formulir pengecekan barang secara aktual, lalu menekan "Simpan". Angka persediaan barang di gudang dan laporan pengeluaran akan langsung diperbarui secara otomatis.
 
 ### 📊 4. Papan Laporan Khusus Pimpinan
 - **Grafik Warna-Warni**: Pimpinan bisa melihat perbandingan Uang Masuk dan Uang Keluar lewat grafik tiang yang bergerak indah.
