@@ -1,0 +1,281 @@
+=================================================
+   DOKUMEN PENJELASAN DETAIL & INSTRUKSI SISTEM  
+=================================================
+
+Dokumen ini berisi penjelasan detail, alur operasional,
+dan instruksi teknis dari ERP PT Paramitra Praya Prawatya.
+
+## 🔄 Alur Sistem Lengkap
+
+  Penjelasan langkah demi langkah bagaimana operasional PT Paramitra Praya Prawatya berjalan dari awal hingga akhir menggunakan sistem terpadu.
+
+---
+
+## 🎯 Gambaran Umum
+
+Aplikasi ini meniru siklus hidup bisnis yang sesungguhnya. Seluruh urusan saling menyambung seperti mata rantai: dari kita membeli barang ke pabrik, menyimpannya di gudang, sampai kita berhasil menjualnya ke pelanggan dan menghitung keuntungan.
+
+Sistem dirancang untuk tiga kelompok pengguna utama:
+1. **Staf Operasional (Admin)**: Mengurus persediaan barang, memproses pesanan, mengatur pengiriman, dan belanja ke pabrik.
+2. **Pimpinan Perusahaan (Manajemen)**: Memantau ringkasan keuangan, melihat tingkat keuntungan, dan mengawasi kegiatan bisnis dari satu layar.
+3. **Pelanggan**: Memiliki akses masuk sendiri untuk berbelanja layaknya di toko daring (*online shop*) dan melacak keberadaan paket mereka.
+
+---
+
+## 🔄 URUTAN CARA KERJA SISTEM
+
+Berikut adalah urutan kegiatan harian dari hulu ke hilir:
+
+### **TAHAP 1: BELI BARANG KE PABRIK** 
+*(Dilakukan oleh: Staf Operasional)*
+
+1. Staf membuka menu "Pesanan Pembelian" lalu memilih pabrik tujuan (Contoh: Pabrik Sudarshan).
+2. Staf memasukkan jenis dan jumlah barang yang ingin dibeli, lalu menekan tombol "Kirim".
+3. Setelah paket kiriman tiba di kantor, Staf menekan tombol **"Terima Barang Fisik"**.
+4. **Wajib Isi Formulir:** Staf akan dihadapkan pada formulir pengecekan untuk mencocokkan jumlah barang fisik. Staf harus mengisi jumlah yang benar dan menekan **"Simpan & Update Stok"**.
+5. **Proses Otomatis:** Detik itu juga, jumlah barang di dalam "Gudang Pusat" kita akan langsung bertambah. Di saat yang sama, uang perusahaan yang terpakai untuk beli barang itu akan sah tercatat dan langsung masuk ke Laporan Pengeluaran.
+
+---
+
+### **TAHAP 2: MENERIMA PESANAN PELANGGAN**
+Ada dua cara pesanan bisa masuk ke sistem kita:
+
+**Jalur Mandiri (Pelanggan berbelanja sendiri):**
+1. Pelanggan masuk ke situs kita, memilih barang dari Katalog, lalu memasukkannya ke Keranjang Belanja.
+2. Pelanggan memproses keranjangnya dan memilih cara bayar.
+
+**Jalur Cepat (Staf yang tolong isikan):**
+*(Sangat berguna untuk pelanggan yang memesan via telepon atau WhatsApp)*
+1. Staf membuka menu Transaksi dan menekan tombol "Buat Pesanan Baru".
+2. Staf akan dihadapkan pada formulir canggih. Staf bisa mengeklik **"Tambah Produk Lain"** berkali-kali untuk menyusun banyak barang sekaligus secara instan tanpa perlu repot.
+3. Pesanan langsung tercatat dan masuk ke status "Menunggu Pembayaran".
+
+---
+
+### **TAHAP 3: MENERIMA UANG & MENCETAK TAGIHAN**
+*(Dilakukan oleh: Staf Operasional)*
+
+1. Begitu ada pelanggan yang mengabarkan sudah transfer uang, Staf akan mencari pesanan orang tersebut.
+2. Staf cukup mengeklik satu tombol ajaib: **"ACC Bayar"**.
+3. **Proses Otomatis:** Sistem akan seketika membuatkan **Surat Tagihan (Invoice) PDF Resmi** yang rapi. Status pesanan berubah menjadi "Lunas", dan uang dari hasil jualan itu otomatis masuk ke catatan Laporan Pemasukan.
+
+---
+
+### **TAHAP 4: MENGIRIM BARANG & SCAN KODE QR**
+*(Dilakukan oleh: Staf Logistik & Pelanggan)*
+
+1. Barang yang sudah lunas siap dikirim. Staf Gudang menekan tombol **"Proses Pengiriman"**.
+2. **Proses Otomatis:** Sistem akan langsung mencetak dua hal: Nomor Pelacakan (Resi) dan **Surat Jalan Pengiriman Berformat PDF**.
+3. **Kecanggihan Kode QR:** 
+   - Di kertas Surat Jalan tersebut, sistem telah membuatkan gambar kotak Kode QR. 
+   - Sopir membawa Surat Jalan beserta paket ke rumah pelanggan.
+   - Setibanya di sana, pelanggan cukup membuka kamera HP mereka dan **menyorot (scan) Kode QR** tersebut.
+   - Di HP pelanggan akan muncul tombol "Barang Diterima". Saat pelanggan mengekliknya, komputer di kantor pusat akan langsung tahu dan statusnya berubah jadi selesai. Sopir tidak perlu lapor via telepon lagi!
+
+---
+
+## 📈 FASILITAS MANAJEMEN & KEUANGAN (UNTUK PIMPINAN)
+
+Pimpinan perusahaan (Bos) tidak perlu pusing melihat tabel yang panjang. Sistem ini menyuguhkan kemewahan berikut:
+
+1. **Grafik Berwarna:** Di halaman awal Pimpinan, ada grafik balok tinggi rendah yang memperlihatkan perbandingan jumlah uang masuk melawan uang keluar.
+2. **Hitung Untung/Rugi Sendiri:** Ada satu halaman khusus bernama Laporan Gabungan. Sistem otomatis mengumpulkan semua pendapatan, menguranginya dengan semua pengeluaran pabrik, dan menampilkan tulisan **Total Keuntungan Bersih** di paling bawah secara jujur.
+3. **Cetak Tanpa Boros Tinta:** Kalau laporan keuangan itu mau diprint ke kertas, sistem akan menyesuaikan diri. Warna latar belakang gelap otomatis hilang, dan tulisan berubah jadi hitam pekat agar tinta *printer* kantor awet.
+4. **Buku Arsip Digital:** Arsip bulan-bulan lalu tidak ditumpuk sembarangan. Tersedia halaman khusus di mana Pimpinan bisa berpindah dari ruangan "Arsip Uang Masuk" ke "Arsip Uang Keluar" semudah menekan tombol.
+
+---
+
+## 📦 PENGATURAN GUDANG TINGKAT LANJUT
+
+1. **Pemindahan Barang:** Kita bisa memindahkan 50 sak barang dari Gudang Jakarta menuju Gudang Surabaya. Sistem akan mencatat barang keluar dan masuk dengan seimbang tanpa ada persediaan yang "menguap".
+2. **Peringatan Stok Tipis:** Setiap barang punya batas minimal. Kalau stok hampir habis, sistem akan memberikan tanda peringatan agar Staf segera memesan lagi ke pabrik.
+
+---
+
+Dengan mengikuti alur di atas, seluruh rutinitas perusahaan menjadi sangat transparan, tercatat rapi, dan tak perlu lagi bergantung pada ingatan manual! 🚀
+
+---
+
+## 📖 Panduan Implementasi ERP
+
+  Panduan lengkap penerapan perangkat lunak terpadu untuk keseharian operasional PT Paramitra Praya Prawatya.
+
+---
+
+## 🌟 KATA PENGANTAR
+
+Buku panduan ini ditulis tanpa menggunakan istilah komputer yang rumit, agar seluruh lapisan karyawan dari direktur hingga staf gudang dapat memahami bagaimana cara kerja baru perusahaan kita.
+
+Setiap alat dan tombol di dalam sistem ini saling berhubungan. Jika satu orang menyelesaikan tugasnya dengan benar, tugas orang berikutnya akan otomatis menjadi lebih ringan.
+
+---
+
+### MENU PELAYANAN PELANGGAN (TRANSAKSI)
+
+Ini adalah jantung dari kegiatan operasional. Di dalam menu **Transaksi**, kita mengurus semua orang yang ingin membeli barang.
+
+### ✅ Pemesanan Lincah
+Dulu kita menulis pesanan di kertas atau nota. Sekarang, ketika ada pelanggan menelepon, staf cukup membuka layar **"Buat Pesanan Baru"**.
+Tombol **"Tambah Produk Lain"** adalah fitur ajaib. Staf bisa menekannya belasan kali tanpa membuat komputer lambat, sehingga ratusan pesanan dapat tercatat rapi dalam hitungan detik.
+
+### ✅ Penagihan Pintar (Invoice Otomatis)
+Staf tidak perlu lagi pusing menghitung total harga di kalkulator, menambah biaya pajak, lalu mengetiknya di Microsoft Word.
+Ketika pelanggan menyatakan telah mentransfer pembayaran ke bank kita, staf cukup menekan tombol **"ACC Bayar"**. 
+Tugas staf selesai! Komputer akan langsung mengetik lembar Surat Tagihan Resmi (Invoice PDF) dan merapikan catatan keuangan masuk secara otomatis.
+
+---
+
+### MENU GUDANG & PENGIRIMAN BARANG
+
+Barang yang sudah lunas siap untuk diantarkan oleh kurir ke alamat pelanggan. Di sinilah kehebatan menu **Logistik (Pengiriman)** bekerja.
+
+### ✅ Pembuatan Surat Jalan Otomatis
+Staf gudang tidak usah lagi menyalin ulang alamat pelanggan atau menulis daftar barang di buku besar.
+Saat paket siap diberangkatkan, staf gudang menekan tombol **"Proses Pengiriman"**.
+Komputer akan langsung mencetak lembar berharga bernama **Surat Jalan Pengiriman**. Lembaran ini sudah berisi data pelanggan lengkap, daftar rincian barang, dan sebuah gambar kotak **Kode QR** (Barcode) unik di sudut kertasnya.
+
+### ✅ Penyelesaian Pengiriman Canggih (Kode QR)
+Ini adalah fitur unggulan untuk mempermudah pekerjaan sopir/kurir. 
+Sopir membawa kertas Surat Jalan tadi ke rumah pelanggan. Begitu paket diserahkan, pelanggan cukup memindai (menyorot) gambar Kode QR di kertas tersebut dengan kamera telepon genggam mereka.
+Begitu pelanggan menekan tombol Setuju di layar HP mereka, detik itu juga warna status pengiriman di komputer kantor pusat akan berubah menjadi "Selesai" (Barang Telah Diterima).
+Mulai saat ini, sopir tidak perlu membuang pulsa untuk menelepon kantor setiap kali barang sampai!
+
+---
+
+### MENU PENGADAAN & BELANJA (SUPPLY CHAIN)
+
+Sebuah perusahaan tidak hanya menjual, namun juga perlu membeli persediaan. Sistem kita menyediakan fitur **Pesanan Pembelian**.
+
+### ✅ Catatan Kontak Pabrik
+Kita tidak perlu lagi mencari kartu nama pabrik penyedia bahan baku. Sistem memiliki menu "Buku Catatan Pemasok" yang menyimpan rincian nama pabrik (Misalnya: Pabrik Sudarshan dari India), beserta nomor teleponnya.
+
+### ✅ Barang Tiba, Otomatis Masuk Gudang
+Staf membuat pesanan pembelian kepada pabrik menggunakan sistem.
+Ketika kapal kargo atau truk pabrik tiba membawa barang yang kita pesan, Staf hanya perlu menekan tombol **"Terima Barang Fisik"** di sistem.
+Ini akan memunculkan **Formulir Pengecekan Fisik**. Staf harus mengisi jumlah asli barang yang datang, lalu mengeklik tombol **"Simpan & Update Stok"**.
+Kejadian ini akan memicu dua hal hebat sekaligus secara otomatis:
+1. Jumlah persediaan barang kita di dalam "Gudang Pusat" seketika bertambah.
+2. Uang pengeluaran perusahaan untuk membayar pabrik menjadi sah, dan langsung ditambahkan ke dalam buku Laporan Pengeluaran.
+
+---
+
+### RUANG KEPEMIMPINAN (DASHBOARD BOS)
+
+Bagi jajaran direksi dan manajemen tingkat atas, sistem ini adalah teropong bisnis yang paling canggih dan jujur.
+
+### ✅ Dasbor yang Bergerak (Grafik Animasi)
+Layar pertama yang menyambut Pimpinan adalah tiang-tiang grafik yang merangkum hasil kerja keras seluruh perusahaan secara waktu nyata (langsung saat itu juga). Uang masuk disandingkan dengan uang keluar agar arah perusahaan terlihat terang benderang.
+
+### ✅ Kalkulator Laba Bersih
+Sistem telah dilengkapi halaman "Laporan Gabungan". Di dasar tabel yang panjang, komputer telah memotong seluruh pendapatan kotor dengan biaya pengeluaran untuk memunculkan angka **Total Laba Bersih**. Sangat transparan dan akurat.
+
+### ✅ Hemat Kertas & Tinta Cetak
+Kami memahami dokumen keuangan terkadang harus diserahkan secara fisik di atas meja direksi. Jangan ragu menekan fungsi cetak *(Print)*. Sistem akan menonaktifkan seluruh warna gelap dan latar belakang dari komputer, menggantinya menjadi latar putih bening dan tinta hitam pekat agar ramah untuk semua jenis mesin *Printer* kantor.
+
+---
+
+**Selamat datang di era baru PT Paramitra Praya Prawatya yang sepenuhnya digital, tertib, dan lincah!** 🚀
+
+---
+
+## 💻 Cara Pindah Device (Migrasi)
+
+---
+
+## 🌟 PENGANTAR MIGRASI
+
+Sistem aplikasi ini terdiri dari dua bagian yang tidak terpisahkan: **Kumpulan Folder Aplikasi** dan **Rekaman Basis Data (*Database*)**. Jika Anda hanya memindahkan foldernya saja tanpa membawa pangkalan datanya, sistem akan kosong dan lumpuh.
+
+Dokumen ini disusun menggunakan bahasa praktis agar pemindahan sistem dari komputer lama ke komputer baru dapat berjalan mulus tanpa kehilangan satu data pun.
+
+---
+
+## 📦 TAHAP 1: PERSIAPAN DI KOMPUTER LAMA
+
+Langkah pertama yang paling penting adalah membungkus pangkalan data (*database*) ke dalam satu berkas, lalu membawanya bersama dengan folder aplikasi.
+
+1. Buka aplikasi **Laragon**, lalu klik tombol **Database** (Langkah ini biasanya akan memunculkan jendela pengelola data seperti HeidiSQL).
+2. Di layar sebelah kiri, cari nama pangkalan data kita: `paramitra_app`.
+3. Klik kanan pada nama tersebut, lalu pilih menu **Export database as SQL** (Simpan sebagai berkas SQL).
+4. Beri nama berkas tersebut menjadi **`paramitra_app.sql`**.
+5. Pindahkan berkas `paramitra_app.sql` tersebut **ke dalam folder utama aplikasi kita** (yaitu di `C:\laragon\www\paramitra-app`).
+6. Kini, folder `paramitra-app` Anda sudah utuh (berisi aplikasi sekaligus catatannya). Silakan **Klik Kanan pada folder `paramitra-app` tersebut**, lalu jadikan bentuk kompresi `.rar` atau `.zip`.
+7. Pindahkan berkas `paramitra-app.rar` tersebut ke media penyimpanan portabel (*Flashdisk* atau Google Drive) Anda.
+
+---
+
+## 💻 TAHAP 2: PEMASANGAN DI KOMPUTER BARU
+
+*Syarat: Pastikan komputer baru Anda sudah terpasang aplikasi Laragon yang siap pakai.*
+
+1. Masukkan *Flashdisk* Anda ke komputer baru.
+2. Buka folder instalasi tempat Laragon berada (Umumnya terletak di laci komputer: `C:\laragon\www`).
+3. Pindahkan berkas RAR Anda ke dalam folder `www` tersebut.
+4. Lakukan pengekstrakan atau pembongkaran berkas di titik tersebut (*Extract Here*).
+5. **Perhatian Penting**: Pastikan setelah dibongkar, susunan rumah foldernya tidak berlapis, melainkan persis menempati jalur ini: `C:\laragon\www\paramitra-app`.
+6. Buka aplikasi Laragon di komputer baru, lalu tekan tombol **Mulai (Start All)**.
+
+---
+
+## 🗄️ TAHAP 3: MENYUNTIKKAN BASIS DATA KE MESIN BARU
+
+Aplikasi Anda kini sudah berada di rumah barunya, namun otaknya masih kosong. Kita perlu menyuntikkan data lama Anda ke komputer baru.
+
+1. Pada aplikasi Laragon di komputer baru, klik tombol **Database**.
+2. Buatlah wadah data yang baru dengan cara **Klik Kanan** -> pilih **Create new database** (Buat basis data baru).
+3. Beri nama wadah tersebut sama persis dengan yang lama, yaitu: **`paramitra_app`**.
+4. Klik pada nama wadah kosong tersebut.
+5. Pilih menu **Import** (atau *Load SQL file*).
+6. Temukan dan masukkan berkas **`paramitra_app.sql`** yang sebelumnya telah Anda selipkan di dalam folder aplikasi.
+7. Tekan tombol **Jalankan / Eksekusi (*Execute / Go*)**. 
+8. Tunggu beberapa detik hingga proses penyuntikan seluruh riwayat data pelanggan dan transaksi Anda selesai 100%.
+
+---
+
+## ⚙️ TAHAP 4: PENGATURAN ULANG DAN PENYEGARAN MESIN
+
+Komputer baru memiliki pengaturan memori internal (*cache*) yang berbeda dengan komputer lama. Kita wajib menyegarkan "ingatan" aplikasi agar tidak tersesat di rumah barunya.
+
+1. Buka aplikasi Laragon, lalu klik tombol **Terminal**. Layar instruksi berwarna gelap akan muncul.
+2. Masukkan perintah berikut untuk memusatkan perhatian terminal ke dalam folder aplikasi kita, lalu tekan Enter:
+   ```bash
+   cd C:\laragon\www\paramitra-app
+   ```
+3. Selanjutnya, masukkan **perintah pembersihan sapu jagat** ini, lalu tekan Enter:
+   ```bash
+   php artisan optimize:clear
+   ```
+   *(Perintah ini adalah kunci utama yang akan membuang memori usang dan membuat sistem mengenali komponen komputer baru Anda).*
+4. **Langkah Penjagaan Mutu Tampilan**: Agar kerapian desain, cat warna, dan tata letak tidak berantakan di layar yang baru, sangat disarankan untuk menjalankan satu perintah penyusunan ulang desain berikut ini, lalu tekan Enter:
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 🎉 TAHAP 5: UJI COBA KEBERHASILAN
+
+Selamat! Proses transplantasi sistem telah sukses terlaksana. Mari kita uji coba kemampuannya.
+
+1. Buka peramban internet Anda (Google Chrome atau Microsoft Edge).
+2. Masukkan alamat sakti operasional kita di bilah atas:
+   `http://localhost/paramitra-app/public`
+3. Tekan Enter.
+
+Sistem Aplikasi PT Paramitra Praya Prawatya akan terbuka dengan terang benderang, utuh, tanpa kehilangan satu angka pun dari riwayat bisnis yang Anda kerjakan di komputer sebelumnya. 🚀
+
+> **💡 Catatan Teknologi Terbaru (Smart URL Root):**
+> Anda tidak perlu khawatir dengan *Error 404 Not Found* saat menekan tombol-tombol di dalam aplikasi. Sistem ini telah ditanamkan kecerdasan untuk membaca struktur folder Laragon (`localhost/paramitra-app/public`) secara otomatis tanpa memotong jalurnya. Seluruh tombol dijamin akan bekerja 100% sempurna!
+
+---
+
+### ❓ PANDUAN MASALAH UMUM (TROUBLESHOOTING)
+
+- **Masalah**: Tampilan situs berwarna polos putih berantakan tanpa gaya CSS.
+  **Solusi**: Anda melewatkan langkah ke-4 pada Tahap 4. Silakan buka Terminal Laragon dan jalankan perintah `npm run build`.
+- **Masalah**: Layar menampilkan tulisan *Database Connection Refused* (Koneksi Ditolak).
+  **Solusi**: Pastikan tombol Laragon sudah dinyalakan (Start All), dan pastikan Anda tidak salah mengetik nama `paramitra_app` saat membuat *database* baru.
+- **Masalah**: Gambar atau Ikon tidak muncul.
+  **Solusi**: Pastikan komputer Anda terhubung ke internet saat pertama kali membukanya agar ikon dari perpustakaan *online* dapat terunduh sempurna.
+
+---
